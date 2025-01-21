@@ -19,11 +19,21 @@ h1 {
     font-size: 42px;
 }
 
+h2 {
+    font-size: 35px;
+}
 
 h4 {
     font-size: 30px;
 }
 
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 20px;
+}
 
 .paragraph {
     font-size: 18px;
@@ -59,7 +69,7 @@ h4 {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    margin: auto 200px;
+    margin: auto 100px;
 
 
 }
@@ -94,6 +104,7 @@ li {
 a {
     text-decoration: none;
     font-size: 18px;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -132,7 +143,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto 200px;
+    margin: auto 100px;
     gap: 20px;
 
 
@@ -163,7 +174,7 @@ a {
 .cards {
     display: flex;
     justify-content: space-between;
-    margin: auto 200px;
+    margin: auto 100px;
 }
 
 
@@ -180,6 +191,29 @@ a {
     background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
 
+.card-2 {
+
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-3 {
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-para1 {
+    color: rgb(100, 200, 255);
+}
+
+.card-para2 {
+    color: rgb(240, 170, 0);
+}
+
+.card-para3 {
+    color: rgb(135, 0, 255);
+}
+
 .slide-icon {
 
     border-radius: 30px;
@@ -190,16 +224,123 @@ a {
     margin: 5px;
 }
 
+/* stories */
+.stories {
+    background-image: url(../assets/bg.png);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(254, 163, 1, 0.3);
+    background-color: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background-image: url(../assets/bg.png);
+    background-position-x: 100px;
+    background-position-y: 50px;
+    background-size: cover;
+    text-align: center;
+}
+
+.stories-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin: auto 150px;
+}
+
+.main-card {
+    height: 600px;
+    width: 500px;
+    border-radius: 16px 16px 0px 0px;
+    background-color: rgb(255, 255, 255)
+}
+
+.main-card-img img {
+    width: 500px;
+    height: 300px;
+}
+
+.stories-btn-1 {
+    border: none;
+    border-radius: 45px;
+    background-color: rgb(60, 216, 232);
+    padding: 10px 8px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 22px;
+    right: 150px;
+
+}
+
+.main-card-description {
+    text-align: left;
+    padding: 15px;
+}
+
+.side-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.side-card {
+    height: 280px;
+    width: 260px;
+}
+
+.side-card-img {
+    margin-bottom: 0;
+}
+
+.side-card-img img {
+    width: 260px;
+    height: 150px;
+}
+
+.side-btn-1 {
+    border: none;
+    border-radius: 45px;
+    background-color: rgb(60, 216, 232);
+    padding: 10px 8px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 22px;
+    right: 40px;
+
+}
+
+.side-card-description {
+    margin: 0;
+}
+
 /* footer */
-.logo-title {
+.bottom-part {
     display: flex;
+    justify-content: space-around;
+    background-color: rgb(1, 172, 253);
+    color: rgb(255, 255, 255);
+    padding: 50px 30px;
+
+}
+
+.footer-logo h4 {
+    margin: 0;
+}
+
+.footer-description {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    padding: 20px;
+    width: 150px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:576px) {
     .body {
         margin: 0;
         padding: 0;
-        width: 400px
+        width: 450px
     }
 
 
@@ -208,7 +349,7 @@ a {
         justify-content: center;
         align-items: center;
         justify-content: space-between;
-        margin: auto 20px;
+        margin: auto 18px;
 
 
     }
@@ -238,7 +379,6 @@ a {
 
     }
 
-
     .nav-underline {
         display: block;
         box-sizing: border-box;
@@ -262,8 +402,8 @@ a {
 
     /* curriculum */
     .curriculum {
-        width: 400PX;
-        margin: auto 20px;
+        max-width: 425PX;
+        margin: 1px;
 
     }
 
@@ -275,13 +415,10 @@ a {
     }
 
     .card {
-        width: 320px;
-        height: 380px;
+        width: 280px;
+        height: 400px;
         text-align: center;
         margin-top: 20px;
-        margin-right: 15PX;
-        margin-left: 15px;
-        padding: 10px 20px;
         box-sizing: border-box;
         border: 0.94px solid rgb(222, 245, 255);
         border-radius: 18.86px;
@@ -290,10 +427,62 @@ a {
         background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
     }
 
+    .card-2 {
+
+        box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    }
+
+    .card-3 {
+        box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+        background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    }
+
+
     .next-slide {
         display: none;
     }
 
+    /* stories */
+    .stories {
+        max-width: 425px;
+    }
 
+    .side-cards {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .side-card {
+        height: 280px;
+        width: 200px;
+
+    }
+
+    .main-card {
+        display: none;
+    }
+
+    /* footer */
+
+    .bottom-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left {
+        margin-right: 30px;
+    }
+
+    .footer-description {
+        width: 350px;
+
+    }
+
+    .footer-logo {
+        display: flex;
+        padding: 20px;
+        width: 100px;
+        margin-right: 50px;
+    }
 }
