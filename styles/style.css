@@ -60,8 +60,47 @@ h6 {
     background-color: rgb(17, 17, 17);
 }
 
+.stories h5 {
+    margin-top: 0;
+}
+
+.stories h6 {
+    margin-top: 0;
+}
+
+.side-btn-1 {
+    border: none;
+    border-radius: 45px;
+    background-color: rgb(60, 216, 232);
+    padding: 10px 8px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 22px;
+    right: 40px;
+
+}
+
+.green {
+    background-color: rgb(149, 178, 38);
+}
+
+.purple {
+    background-color: rgb(93, 88, 240);
+}
+
+/* marquee */
+marquee {
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    direction: left;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb(254, 163, 1);
 
 
+}
 
 /* navbar */
 .navbar {
@@ -163,7 +202,8 @@ a {
 /* curriculum */
 .curriculum {
 
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     background-image: url(../assets/bg.png);
     background-position-x: -50px;
     background-size: contain;
@@ -226,13 +266,9 @@ a {
 
 /* stories */
 .stories {
-    background-image: url(../assets/bg.png);
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(254, 163, 1, 0.3);
-    background-color: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-    background-image: url(../assets/bg.png);
-    background-position-x: 100px;
-    background-position-y: 50px;
-    background-size: cover;
+    background-image: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background-position-x: -50px;
+    background-size: contain;
     text-align: center;
 }
 
@@ -246,13 +282,15 @@ a {
 .main-card {
     height: 600px;
     width: 500px;
-    border-radius: 16px 16px 0px 0px;
-    background-color: rgb(255, 255, 255)
+    border-radius: 19px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(178, 190, 181);
 }
 
 .main-card-img img {
     width: 500px;
     height: 300px;
+    border-radius: 19px 19px 0 0;
 }
 
 .stories-btn-1 {
@@ -277,37 +315,42 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+
 }
 
 .side-card {
     height: 280px;
     width: 260px;
+    border: 1px solid rgb(178, 190, 181);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
 }
 
 .side-card-img {
     margin-bottom: 0;
+
 }
 
 .side-card-img img {
     width: 260px;
     height: 150px;
+    border-radius: 15px 15px 0 0;
 }
 
-.side-btn-1 {
-    border: none;
-    border-radius: 45px;
-    background-color: rgb(60, 216, 232);
-    padding: 10px 8px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    position: relative;
-    bottom: 22px;
-    right: 40px;
 
+
+.hide {
+    display: none;
 }
 
 .side-card-description {
     margin: 0;
+    padding: 2px;
+}
+
+.view-all {
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 /* footer */
@@ -326,14 +369,13 @@ a {
 
 .footer-description {
     width: 350px;
-    margin-left: 20px;
+
 }
 
 .footer-logo {
     display: flex;
-    padding: 20px;
     width: 150px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 @media screen and (max-width:576px) {
@@ -385,6 +427,10 @@ a {
         border: 0.5px solid rgb(254, 163, 1);
     }
 
+    /* marquee */
+    marquee {
+        width: 97%;
+    }
 
     /* banner */
     .banner {
@@ -404,6 +450,8 @@ a {
     .curriculum {
         max-width: 425PX;
         margin: 1px;
+        margin-top: 100px;
+        margin-bottom: 100px;
 
     }
 
@@ -444,23 +492,68 @@ a {
     }
 
     /* stories */
+    .stories-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
     .stories {
-        max-width: 425px;
+        max-width: 450px;
     }
 
     .side-cards {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hide {
+        display: block;
     }
 
     .side-card {
-        height: 280px;
-        width: 200px;
+        height: 220px;
+        width: 150px;
 
+    }
+
+    .side-card-img img {
+        width: 150px;
+        height: 105px;
+    }
+
+    .side-card-description h6 {
+        font-size: 14px;
+    }
+
+    .side-btn-1 {
+        border: none;
+        border-radius: 45px;
+        background-color: rgb(60, 216, 232);
+        padding: 10px 8px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 22px;
+        left: 1px;
+
+    }
+
+    .green {
+        background-color: rgb(149, 178, 38);
+    }
+
+    .purple {
+        background-color: rgb(93, 88, 240);
     }
 
     .main-card {
         display: none;
+    }
+
+    .view-all {
+        margin-bottom: 50px;
     }
 
     /* footer */
@@ -468,6 +561,7 @@ a {
     .bottom-part {
         display: flex;
         flex-direction: column;
+        max-width: 450px;
     }
 
     .footer-left {
@@ -475,14 +569,16 @@ a {
     }
 
     .footer-description {
-        width: 350px;
+        width: 300px;
+
 
     }
 
     .footer-logo {
         display: flex;
-        padding: 20px;
         width: 100px;
-        margin-right: 50px;
+        text-align: left;
     }
+
+
 }
